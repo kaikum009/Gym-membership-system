@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="path_to_your_favicon.ico" />
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <nav class="container-1">
+        
+        <div class="main-logo">
+            <img src="/public/assets/img/dumbell.png" alt="dumbell">
+            <h2>GymPro</h2>
+            </div>
+    
+        <!-- <div class="search-container">
+            <input type="search" name="" class="search-bar1" id="">
+            <img class="search-icon" src="/public/assets/img/search.png" alt="">
+        </div> -->
+        
+    </nav>
+
+    <div class="container-2">
+        <nav class="side-nav">
+          <div class="Dashboard">
+            <img class="icon-4" src ="/public/assets/img/home.png" alt="">
+            <a class="click" href="/public/das.html">Dashboard</a>
+          </div>
+            <div class="memberBox">
+                <img class="icon-1" src="/public/assets/img/group.png" alt="">
+                <a class="click" href="#">Membership</a>
+            </div>
+            <div class="paymentBox">
+                <img class="icon-3" src="/public/assets/img/atm-card.png" alt="">
+                <a class="click" href="/public/payment.html">Payment</a> 
+            </div>
+            <div class="logoutBox"> 
+                <img class="icon-2" src="/public/assets/img/logout (1).png" alt="">
+                <a class="click" href="/public/landing.html">Logout</a>
+            </div>
+          
+        </nav>
+
+        <!-- <div class ="memb-table"> 
+            
+            <table class="table-1">
+                <caption><h2>MEMBERSHIP</h2></caption>
+                <thead>
+                    <tr>
+                        <th>id_no</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>phone</th>
+                        <th>start_date</th>
+                        <th>end_date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>123-456-7890</td>
+                        <td>2025-01-01</td>
+                        <td>2025-12-31</td>
+            
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>987-654-3210</td>
+                        <td>2025-02-01</td>
+                        <td>2025-11-30</td>
+                        <td><button class="delete-btn">Delete</button></td>
+                    </tr>
+                    <tbody id="membersTable"></tbody>
+                    
+            </table>
+
+            <div class="table-buttons">
+                <button id="addRowBtn">Add</button>
+                <button id="saveBtn">Save</button>
+            </div>
+            
+            <script src="members.js"></script>
+        </div>  -->
+        
+        <!-- <div class="membership-container">
+            <div class="membership-table">
+              <table class="members-table">
+                <caption><h2>MEMBERSHIP MANAGEMENT</h2></caption>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>123-456-7890</td>
+                    <td>2025-01-01</td>
+                    <td>2025-12-31</td>
+                    <td><button class="action-btn delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>jane@example.com</td>
+                    <td>987-654-3210</td>
+                    <td>2025-02-01</td>
+                    <td>2025-11-30</td>
+                    <td><button class="action-btn delete-btn">Delete</button></td>
+                  </tr>
+                  <tbody id="membersTable"></tbody>
+                </tbody>
+              </table>
+              
+              <div class="table-controls">
+                <button id="addRowBtn" class="control-btn primary-btn">
+                  <i class="fas fa-plus"></i> Add Member
+                </button>
+                <button id="saveBtn" class="control-btn success-btn">
+                  <i class="fas fa-save"></i> Save Changes
+                </button>
+              </div>
+            </div>
+          </div> -->
+        
+          <div class="membership-container">
+            <div class="table-controls-top">
+              <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search members...">
+              </div>
+            </div>
+          
+            <div class="membership-table">
+              <table class="members-table">
+                <caption><h2>MEMBERSHIP MANAGEMENT</h2></caption>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                  <!-- Table rows will be dynamically inserted here -->
+                </tbody>
+              </table>
+              
+              <div class="table-footer">
+                <div class="pagination-info">
+                  Showing <span id="startItem">1</span> to <span id="endItem">10</span> of <span id="totalItems">50</span> entries
+                </div>
+                
+                <div class="pagination-controls">
+                  <button id="firstPage" class="page-btn" disabled><i class="fas fa-angle-double-left"></i></button>
+                  <button id="prevPage" class="page-btn" disabled><i class="fas fa-angle-left"></i></button>
+                  
+                  <div class="page-numbers" id="pageNumbers">
+                    <!-- Page numbers will be inserted here -->
+                  </div>
+                  
+                  <button id="nextPage" class="page-btn"><i class="fas fa-angle-right"></i></button>
+                  <button id="lastPage" class="page-btn"><i class="fas fa-angle-double-right"></i></button>
+                </div>
+                
+                <div class="table-controls">
+                  <button id="addRowBtn" class="control-btn primary-btn">
+                    <i class="fas fa-plus"></i> Add Member
+                  </button>
+                  <button id="saveBtn" class="control-btn success-btn">
+                    <i class="fas fa-save"></i> Save Changes
+                  </button>
+                </div>
+              </div>
+              <div id="loadingIndicator" style="display: none;">Loading...</div>
+
+            </div>
+          </div>
+            
+          <script src="/public/js/members.js"></script>
+
+                
+                
+                   <!-- Success Modal -->
+                   <div class="modal success-modal" id="successModal">
+                      <div class="modal-content">
+                          <div class="modal-header">SUCCESS</div>
+                          <div class="modal-body">
+                              Member successfully added !
+                          </div>
+                          <div class="modal-footer">
+                              <button class="modal-button" onclick="closeModal('successModal')">Continue</button>
+                          </div>
+                      </div>
+                  </div> 
+                  
+                  <!-- Error Modal -->
+                   <div class="modal error-modal" id="errorModal">
+                      <div class="modal-content">
+                          <div class="modal-header">DELETED</div>
+                          <div class="modal-body">
+                              Member successfully deleted !
+                          </div>
+                          <div class="modal-footer">
+                              <button class="modal-button" onclick="closeModal('errorModal')">Continue</button>
+                          </div>
+                      </div>
+                  </div>
+                  
+                   <!-- Demo buttons to show the modals  -->
+                   <!-- <button onclick="showModal('successModal')" style="background-color: #2e7d32; color: white; padding: 10px 20px; border: none; border-radius: 4px; margin: 10px; cursor: pointer;">Show Success Modal</button>
+                  <button onclick="showModal('errorModal')" style="background-color: #d32f2f; color: white; padding: 10px 20px; border: none; border-radius: 4px; margin: 10px; cursor: pointer;">Show Error Modal</button>  -->
+                   <script>
+                    function showModal(modalId) {
+                        document.getElementById(modalId).style.display = 'flex';
+                    }
+                    
+                    function closeModal(modalId) {
+                        document.getElementById(modalId).style.display = 'none'; 
+                    }
+                </script>  
+                
+    </div>
+
+    <footer>
+        <div class="bottom-box"> 
+         Copyright © Your Website 2023
+        </div>
+        </footer>
+</body>
+</html>

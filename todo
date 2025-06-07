@@ -1,0 +1,6 @@
+clean up npm cache
+clean up node modules 
+install bun
+recreate package json with bun or npm for js and expressjs
+install pg express cors
+run - bun run start

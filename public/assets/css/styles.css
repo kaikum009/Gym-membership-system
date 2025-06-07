@@ -1,0 +1,889 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+    
+}
+.main-logo img{
+    position: relative;
+    left:97px;
+    top:34px;
+    height: 32px;
+    width: 33px;
+    
+}
+
+
+.container-1{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 90px;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(112, 104, 104, 0.4);
+}
+
+.container-1 .Heading{
+color: white;
+}
+/* .containers-1{
+    display: flex;
+    background-color: black;
+    height: 90px;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(112, 104, 104, 0.4);
+} */
+
+
+.side-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+    width: 15vw;
+    height: auto;
+    overflow: auto;
+   
+
+}
+
+
+
+.container-2{
+    display: flex;
+    width: 100vw;
+    height: 88vh;
+    
+}
+.container-3{
+    width:100%;
+}
+
+/* .table-1{
+    display: flex;
+    color: black;
+    justify-content: center;
+    width: auto;
+    padding: 20px 150px 0px 150px;
+    font-weight: 100;
+}
+
+.table-2{
+    display: flex;
+    color: black;
+    justify-content: center;
+    width: auto;
+    padding: 20px 150px 0px 150px;
+    font-weight: 100;
+} */
+
+/* .row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6 {
+    color: black;
+    width: 120px;
+    border: 1px solid black;
+    text-align: center;
+    
+
+}
+
+.rows-1,
+.rows-2,
+.rows-3,
+.rows-4 {
+    color: black;
+    width: 120px;
+    border: 1px solid black;
+    text-align: center;
+     */
+
+
+
+.rows-4{
+    width: 200px;
+}
+
+
+.search-container{
+    margin-left: 1000px;
+    width:500px;
+
+}
+
+.search-icon{
+    width:29.5px;
+    height:29.5px;
+    position: relative;
+    top: 9.5px;
+    right: 35px;
+
+}
+
+a{
+    width: 142.84px;
+    height: 28.5px;
+}
+
+
+img{
+    height: 25px;
+    width: 25px;
+}
+
+.icon-1,
+.icon-2,
+.icon-3,
+.icon-4 {
+
+    position: relative;
+    top: 4px;
+}
+
+.icon-2{
+    position:relative;
+    height: 23px;
+    left: 2px;
+    top: 5px;
+
+}
+.logoutBox{
+    height: 38.5px;
+}
+
+.paymentBox,
+.memberBox,
+.Dashboard{
+    margin-bottom: 10px;
+}
+
+.side-nav .logoutBox:hover,
+.side-nav .paymentBox:hover,
+.side-nav .memberBox:hover,
+.side-nav .Dashboard:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: white;
+}
+
+.search-bar1{
+border-radius: 20px;
+height:30px;
+width: 200px;
+/* border: none; */
+color: black;
+padding-left: 10px; 
+transition-duration: 0.7s;
+
+}
+
+.search-bar1:focus{
+    width: 220px;
+}
+
+.bottom-box{
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 27px;
+    justify-content: center;
+    border-top: 1px solid rgba(112, 104, 104, 0.4);
+}
+
+
+div.landing-nav{
+    display: flex;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* dashboard */
+.heading {
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+    height: 40px;  /* Ensure the heading takes full width */
+}
+
+div h3, div span{
+    color: black;
+}
+
+.value-box {
+    display: flex;            /* Flex layout for items inside the value box */
+    background-color: white;
+    width: 350px;             /* Fixed width for the boxes */
+    margin-left: 20px;        /* Left margin between boxes */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 16px 20px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;            /* Set height of the value box */
+    max-height: 150px;        /* Optional, to limit height */
+
+}
+
+.value-box img{
+    font-size: 50px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    background-color: lightsteelblue;
+    margin-right: 15px;
+}
+
+.value .value-box h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.value .value-box span{
+    font-size: 18px;
+    color: #828997;
+}
+
+.value {
+    display: flex;            /* Align value-boxes in a row */
+    gap: 20px;                /* Space between the value boxes */ 
+    flex-wrap: wrap; 
+    align-items: flex-start; /* You can adjust this value to control space from heading */
+    padding-top: 20px;  /* Adds space from the heading */
+    padding-left: 20px;   /* Allow the boxes to wrap on smaller screens */
+    width: 100%;
+}
+
+.section-1{
+    background-color: #E5EAF5;
+    width: 100%;
+}
+
+/* register form */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.register-form {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.register-form h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.register-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.register-form button {
+    background: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.container-2{
+    background-color: #E5EAF5;
+}
+
+/* pie chart */
+.chart-container {
+    height: 400px;
+    width: 93%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    gap: 200px;
+    position: relative;
+    left: 42px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/* Responsive Design */
+
+.memb-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.table-1 {
+    width: 90%;
+    /* border-collapse: collapse; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: fixed; /* Ensures columns have a fixed width */
+    height: 100px;
+}
+
+caption h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: black;
+} 
+
+.table-1 th, .table-1 td {
+    padding: 8px; /* Reduce padding to make cells smaller */
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px; /* Reduce font size if necessary */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Adds "..." for overflowed text */
+}
+
+.table-1 th {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.table-1 tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table-1 td {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .table-1 {
+        width: 100%;
+    }
+
+    .table-1 th, .table-1 td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Reduce Column Width */
+
+.add-member-form {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    padding: 60px 95px 60px 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+.add-member-form h2{
+    color: black;
+}
+input {
+    color: black;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+}
+button {
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 8px;
+    width: 50%;
+}
+
+.table-buttons {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    height: 50px;
+    justify-content: center;
+}
+
+.table-buttons button {
+    margin: 5px;
+    padding: 8px 15px;
+    font-size: 16px;
+}
+
+/* new member tabe styles */
+/* General Styling */
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    
+  }
+  
+  .membership-container {
+    width: 100%;
+    overflow-x: auto;
+    background: #E5EAF5;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+
+  .members-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    min-width: 800px; /* Minimum width before scrolling */
+    table-layout: fixed;
+    
+  }
+  
+  .members-table caption {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: left;
+
+  }
+  
+  .members-table th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    word-wrap: break-word; 
+  }
+  
+  .members-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: black;
+    word-wrap: break-word; 
+  }
+
+  .members-table th:nth-child(1), 
+  .members-table td:nth-child(1) { width: 80px; } /* ID */
+  .members-table th:nth-child(2), 
+  .members-table td:nth-child(2) { width: 150px; } /* Name */
+  .members-table th:nth-child(3), 
+  .members-table td:nth-child(3) { width: 200px; } /* Email */
+  .members-table th:nth-child(4), 
+  .members-table td:nth-child(4) { width: 120px; } /* Phone */
+  .members-table th:nth-child(5), 
+  .members-table td:nth-child(5) { width: 100px; } /* Start Date */
+  .members-table th:nth-child(6), 
+  .members-table td:nth-child(6) { width: 100px; } /* End Date */
+  .members-table th:nth-child(7), 
+  .members-table td:nth-child(7) { width: 100px; } /* Actions */
+  
+  .members-table tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+
+  .table-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .control-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .primary-btn {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .success-btn {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .control-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .primary-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .success-btn:hover {
+    background-color: #27ae60;
+  }
+  
+  .action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 5px 5px 5px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+
+  @media (max-width: 768px) {
+    .members-table {
+      display: block;
+      overflow-x: auto;
+    }
+    
+    .table-controls {
+      flex-direction: column;
+    }
+    
+    .control-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+
+  /* final version for members-table  */
+  /* Add these styles to your existing CSS */
+
+/* Search and Top Controls */
+.table-controls-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 300px;
+  }
+  
+  .search-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7f8c8d;
+  }
+  
+  #searchInput {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* Pagination Styles */
+  .table-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-info {
+    margin-bottom: 15px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .page-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s;
+  }
+  
+  .page-btn:hover:not(:disabled) {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+  }
+  
+  .page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .page-numbers {
+    display: flex;
+  }
+  
+  .page-number {
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .page-number.active {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .page-number:hover:not(.active) {
+    background-color: #f0f0f0;
+  }
+
+  /* modals instead of alert boxes */
+/* Modal overlay */
+
+/* landing page */
+/* Body background */
+
+
+
+
+
+
+.subtitle {
+  color: #5f6368;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.input-group {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+
+
+.btn-login {
+  background: #1a73e8;
+  color: white;
+  width: 100%;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-login:hover {
+  background: #1557b0;
+}
+
+.gym-branding {
+  margin-bottom: 32px;
+}
+
+.gym-branding img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 16px;
+} 
+
+
+.landing-body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url('/public/assets/img/gym.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.admin-panel {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.inp-put {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #202124;
+}
+
+ /* Base modal styles */
+ .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 12px;
+  width: 320px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.modal-header {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 0 20px 20px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.modal-footer {
+  padding: 0 20px 20px;
+}
+
+.modal-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+.success-modal .modal-header {
+  color: #2a42ad;
+}
+
+.success-modal .modal-button {
+  background-color: #4e64c2;
+  color: white;
+}
+
+.success-modal .modal-button:hover {
+  background-color:  #3d4e9c;
+}
+
+
+.error-modal .modal-header {
+  color: #d32f2f;
+}
+
+.error-modal .modal-button {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.error-modal .modal-button:hover {
+  background-color: #b71c1c;
+}
+
+
+.editing td {
+  background-color: #fff3cd; /* light yellow */
+}
+.edit-btn {
+  background-color: #3498db;
+}
+.edit-btn:hover{
+  background-color: #123767;
+}

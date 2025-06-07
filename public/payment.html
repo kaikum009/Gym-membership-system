@@ -1,0 +1,192 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <nav class="container-1">
+        <div class="main-logo">
+            <img src="/public/assets/img/dumbell.png" alt="dumbell">
+            <h2>GymPro</h2>
+            </div>
+        <div class="search-container">
+            <input type="search" name="" class="search-bar1" id="">
+            <img class="search-icon" src="/public/assets/img/search.png" alt="">
+        </div>
+        
+    </nav>
+
+    <div class="container-2">
+        <nav class="side-nav">
+            <div class="memberBox">
+                <img class="icon-1" src="/public/assets/img/group.png" alt="">
+                <a class="click" href="/public/members.html">Membership</a>
+            </div>
+            <div class="paymentBox">
+                <img class="icon-3" src="/public/assets/img/atm-card.png" alt="">
+                <a class="click" href="#">Payment</a> 
+            </div>
+            <div class="logoutBox"> 
+                <img class="icon-2" src="/public/assets/img/logout (1).png" alt="">
+                <a class="click" href="/landing.html">Logout</a>
+            </div>
+        </nav>
+
+        <div class ="memb-table">
+            
+            <table class="table-1">
+                <caption><h2>PAYMENT</h2></caption>
+                <thead>
+                    <tr>
+                        <th>payment_id</th>
+                        <th>amount</th>
+                        <th>payment_date</th>
+                        <th>payment_method</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6</td>
+                        <td>$400</td>
+                        <td>2025-01-01</td>
+                        <td>Credit-card</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>$800</td>
+                        <td>2025-02-01</td>
+                        <td>Cash</td>
+                        
+                    </tr>
+                    
+
+                    
+                </tbody id="paymentsTable">
+            </table>
+        </div>
+
+        
+    </div>
+<script src="/public/js/payments.js"></script>
+    <footer>
+        <div class="bottom-box"> 
+         Copyright © Your Website 2023
+        </div>
+        </footer>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Payment Management</title>
+</head>
+
+<body>
+
+    <nav class="container-1">
+        <div class="main-logo">
+            <img src="/public/assets/img/dumbell.png" alt="dumbell">
+            <h2>GymPro</h2>
+        </div>
+        <!-- <div class="search-container">
+            <input type="search" name="" class="search-bar1" id="">
+            <img class="search-icon" src="/public/assets/img/search.png" alt="">
+        </div> -->
+    </nav>
+
+    <div class="container-2">
+        <nav class="side-nav">
+            <div class="Dashboard">
+                <img class="icon-4" src ="/public/assets/img/home.png" alt="">
+                <a class="click" href="/public/das.html">Dashboard</a>
+              </div>
+            <div class="memberBox">
+                <img class="icon-1" src="/public/assets/img/group.png" alt="">
+                <a class="click" href="/public/members.html">Membership</a>
+            </div>
+            <div class="paymentBox">
+                <img class="icon-3" src="/public/assets/img/atm-card.png" alt="">
+                <a class="click" href="#">Payment</a> 
+            </div>
+            <div class="logoutBox"> 
+                <img class="icon-2" src="/public/assets/img/logout (1).png" alt="">
+                <a class="click" href="/public/landing.html">Logout</a>
+            </div>
+        </nav>
+
+        <div class="payment-container membership-container">
+            <div class="table-controls-top">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search payments...">
+                </div>
+            </div>
+
+            <div class="payment-table">
+                <table class="payments-table members-table">
+                    <caption><h2>PAYMENT MANAGEMENT</h2></caption>
+                    <thead>
+                        <tr>
+                            <th>Payment ID</th>
+                            <th>Amount</th>
+                            <th>Payment Date</th>
+                            <th>Payment Method</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="paymentsTable">
+                        <!-- Payment rows will be dynamically inserted here -->
+                    </tbody>
+                </table>
+
+                <div class="table-footer">
+                    <div class="pagination-info">
+                        Showing <span id="startItem">1</span> to <span id="endItem">10</span> of <span id="totalItems">50</span> entries
+                    </div>
+
+                    <div class="pagination-controls">
+                        <button id="firstPage" class="page-btn" disabled><i class="fas fa-angle-double-left"></i></button>
+                        <button id="prevPage" class="page-btn" disabled><i class="fas fa-angle-left"></i></button>
+
+                        <div class="page-numbers" id="pageNumbers">
+                            <!-- Page numbers will be inserted here -->
+                        </div>
+
+                        <button id="nextPage" class="page-btn"><i class="fas fa-angle-right"></i></button>
+                        <button id="lastPage" class="page-btn"><i class="fas fa-angle-double-right"></i></button>
+                    </div>
+
+                    <div class="table-controls">
+                        <button id="addRowBtn" class="control-btn primary-btn">
+                            <i class="fas fa-plus"></i> Add Payment
+                        </button>
+                        <button id="saveBtn" class="control-btn success-btn">
+                            <i class="fas fa-save"></i> Save Changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/public/js/payments.js"></script>
+    <footer>
+        <div class="bottom-box"> 
+         Copyright © Your Website 2023
+        </div>
+    </footer>
+</body>
+</html>
