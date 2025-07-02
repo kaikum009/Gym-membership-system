@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    const hashedPassword = 
+
 
     // Send login request to the backend
     try {
