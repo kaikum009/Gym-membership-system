@@ -1,50 +1,3 @@
-// require("dotenv").config();
-
-// const { Pool } = require('pg'); // Correct import
-// const express = require('express');
-// const cors = require('cors');
-
-// const app = express();
-// app.use(cors());
-// app.use(express.json());
-
-// import path from 'path';
-
-
-// const pool = new Pool({  // Correct object instantiation
-//     host: process.env.DB_HOST,
-//     user: process.env.DB_USER,
-//     password: process.env.DB_PASSWORD,
-//     port: process.env.DB_PORT,
-//     database: process.env.DB_NAME
-// });
-
-// app.use(cors({
-//     origin: `http://localhost:${process.env.PORT}`
-//   }));
-
-
-// pool.connect()
-//     .then(() => console.log("Connected to PostgreSQL"))
-//     .catch(err => {
-//         console.error("Connection error:", err);
-//         process.exit(1); // 👈 ensures process stops with error code
-//     });
-
-//     const PORT = process.env.PORT || 4000;
-// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-// //index routes
-
-// // Serve static files from the "public" directory
-// // app.use(express.static(path.join(__dirname, 'public')));
-// app.use('/public', express.static(path.join(__dirname, 'public')));
-
-// // Optional: default route (in case you want to send index.html)
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
-// });
-
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -95,10 +48,7 @@ console.log("Server booted");
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 
-// login authentication
-
-// const password = 'password123';
-// bcrypt.hash(password, 10).then(console.log);
+//login authentication
 const plainPassword = 'shady12';
 const hashedPassword = await bcrypt.hash(plainPassword, 10);  // Hash the password
 
