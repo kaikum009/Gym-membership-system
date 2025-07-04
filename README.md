@@ -1,4 +1,5 @@
-🏋️ Gym Membership System
+🏋️ Gym Membership – In Progress (90%)
+
 
 A work-in-progress web application designed to manage a gym's membership, client information, and payment records. Built using HTML, CSS, JavaScript, Express.js, and PostgreSQL.
 
