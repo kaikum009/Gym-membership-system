@@ -1,7 +1,11 @@
 🏋️ Gym Membership – In Progress (90%)
 
+🎥 Demo Walkthrough: [LinkedIn Post] (https://www.linkedin.com/posts/kumaravelukailash_webdevelopment-fullstackdeveloper-javascript-activity-7337134218000363520-W2ND?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEb2pioBTiDTNtLD9BaBheHYGJliGq7tcBI)
+
+
 
 A work-in-progress web application designed to manage a gym's membership, client information, and payment records. Built using HTML, CSS, JavaScript, Express.js, and PostgreSQL.
+
 
 
 🚧 Project Status
